@@ -1,0 +1,119 @@
+body {
+  font-family: "Roboto";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  background-image: linear-gradient(90deg, rgba(213, 32, 71, 0.8) 0%, rgba(238, 61, 27, 0.8) 100%), url("./bacvk.png");
+  background-size: cover, contain;
+  background-repeat: no-repeat;
+  height: 782px;
+}
+.header__topinfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 50px 168px;
+}
+.header__topinfo-logo {
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 18px;
+}
+.header__topinfo-login {
+  width: 100px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #FFFFFF;
+  border-radius: 6px;
+}
+.header__topinfo__linkcont {
+  display: flex;
+  align-items: center;
+}
+.header__topinfo__linkcont-link {
+  color: #FFFFFF;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.logo {
+  height: 500px;
+}
+.logo__maincont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 94px 165px;
+  gap: 125px;
+}
+.logo__maincont__textcont {
+  display: flex;
+  flex-direction: column;
+  width: 445px;
+}
+.logo__maincont__textcont-main {
+  font-weight: bold;
+  margin-bottom: 21px;
+  font-size: 36px;
+  line-height: 42px;
+}
+.logo__maincont__textcont-second {
+  text-align: justify;
+  font-size: 14px;
+  line-height: 140%;
+}
+.logo__maincont__textcont-link {
+  cursor: pointer;
+  color: #ED4C5C;
+  width: 107px;
+  font-size: 14px;
+  line-height: 140%;
+  border-bottom: 1px solid transparent;
+}
+.logo__maincont__textcont-link:hover {
+  border-bottom: 1px solid #ED4C5C;
+}
+
+.owerview {
+  height: 500px;
+  background-color: #ED4C5C;
+}
+.owerview__app__download {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 94px 165px;
+  gap: 125px;
+}
+.owerview__app__download__text {
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  width: 445px;
+}
+.owerview__app__download__text-main {
+  font-weight: bold;
+  margin-bottom: 21px;
+  font-size: 36px;
+  line-height: 42px;
+}
+.owerview__app__download__text-second {
+  text-align: justify;
+  font-size: 14px;
+  line-height: 140%;
+}
+.owerview__app__download__text-link__icons {
+  width: 32px;
+  height: 32px;
+  margin-top: 21px;
+  cursor: pointer;
+}
+.owerview__app__download .conteiner {
+  display: flex;
+  gap: 10px;
+}/*# sourceMappingURL=style.css.map */
