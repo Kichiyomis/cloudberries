@@ -1,0 +1,226 @@
+body {
+    font-family: 'Roboto';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+
+    background-image: linear-gradient(90deg, rgba(213, 32, 71, 0.8) 0%, rgba(238, 61, 27, 0.8) 100%), url('./bacvk.png');
+    background-size: cover, contain;
+    background-repeat: no-repeat;
+    height: 782px;
+
+    &__topinfo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 50px 168px;
+
+        &-logo {
+            color: #FFFFFF;
+            font-weight: 700;
+            font-size: 18px;
+        }
+
+        &-login {
+            width: 100px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #FFFFFF;
+            border-radius: 6px;
+            color: #FFFFFF;
+        }
+
+        &__linkcont {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+
+            &-link {
+                color: #FFFFFF;
+                font-weight: 500;
+                font-size: 14px;
+            }
+        }
+    }
+
+    &__maintext {
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.05em;
+        text-align: center;
+        color: #FFFFFF;
+
+        &-main {
+            font-weight: 700;
+            font-size: 72px;
+            line-height: 84px;
+        }
+
+        &-second {
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 150%;
+
+        }
+    }
+
+    &__buttoncont {
+        display: flex;
+        justify-content: center;
+
+        &-button {
+            padding: 16px 26px;
+            background-color: #FFFFFF;
+            border-radius: 6px;
+            color: red;
+            cursor: pointer;
+            transition: all 1s;
+
+            &:hover {
+                color: white;
+                background-color: red;
+            }
+
+            &:active {
+                color: rgb(131, 131, 131);
+                background-color: rgb(143, 0, 0);
+            }
+        }
+    }
+
+}
+
+.logo {
+    height: 500px;
+
+    &__maincont {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 94px 165px;
+        gap: 125px;
+
+        &__textcont {
+            display: flex;
+            flex-direction: column;
+            width: 445px;
+
+            &-main {
+                font-weight: bold;
+                margin-bottom: 21px;
+                font-size: 36px;
+                line-height: 42px;
+            }
+
+            &-second {
+                text-align: justify;
+                font-size: 14px;
+                line-height: 140%;
+            }
+
+            &-link {
+                cursor: pointer; //делает ее как ссылку
+                color: #ED4C5C;
+                width: 107px;
+                font-size: 14px;
+                line-height: 140%;
+                border-bottom: 1px solid transparent; //создает его заранее, чтобы не было скачка текста
+
+                &:hover {
+                    border-bottom: 1px solid #ED4C5C; //нижнее подчеркивание ссылки
+                }
+            }
+        }
+    }
+}
+
+.textus {
+    height: 500px;
+
+    &__maincont {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 159px 176px;
+        gap: 125px;
+
+
+        &__textcont {
+            display: flex;
+            flex-direction: column;
+            width: 445px;
+
+            &-main {
+                font-weight: 500;
+                font-size: 36px;
+                line-height: 42px;
+                margin-bottom: 21px;
+            }
+
+            &-second {
+                text-align: justify;
+                font-size: 14px;
+                line-height: 140%;
+
+
+            }
+        }
+    }
+    &__inputcont {
+        display: flex;
+        flex-direction: column;
+        gap: 24px; //с флексами марджин не работает, используем gap.
+
+    &-name {
+        text-align: left; //выравнивание текста.
+        font-size: 16px; //размер шрифта.
+        width: 540px;
+        height: 60px;
+        border: 1px solid #333333;
+        border-radius: 6px;
+        padding-left: 30px;
+
+    }    
+    &-number {
+        text-align: left; //выравнивание текста.
+        font-size: 16px; //размер шрифта.
+        width: 540px; //ширина.
+        height: 60px; //высота.
+        border: 1px solid #333333;
+        border-radius: 6px;
+        padding-left: 30px;
+    }
+
+    &__buttoncont {
+        display: flex;
+
+        &-button {
+            padding: 17px 40px;
+            background: #ED4C5C;
+            border: 1.5px solid #ED4C5C;
+            border-radius: 6px;
+            color: #FFFFFF;
+            cursor: pointer;
+            transition: all 1s;
+
+            &:hover {
+                color: white;
+                background-color: black;
+            }
+            
+            &:active {
+                color: #333333;
+                background-color: #FFFFFF;
+
+            }
+        }
+
+    }
+    }
+}  
