@@ -1,0 +1,119 @@
+body {
+    font-family: 'Roboto';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    background-image: linear-gradient(90deg, rgba(213, 32, 71, 0.8) 0%, rgba(238, 61, 27, 0.8) 100%), url('./bacvk.png');
+    background-size: cover, contain;
+    background-repeat: no-repeat;
+    height: 782px;
+    &__topinfo {
+        display: flex;
+        justify-content: space-between; //расстояние между эллементами в флексе, что они были максимальными и рядом
+        align-items: flex-start;
+        padding: 50px 168px;
+        &-logo {
+            color: #FFFFFF;
+            font-weight: 700;
+            font-size: 18px;
+        }
+        &-login {
+            width: 100px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #FFFFFF;
+            border-radius: 6px;
+        }
+        &__linkcont {
+            display: flex;
+            align-items: center;
+            &-link {
+                color: #FFFFFF;
+                font-weight: 500;
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+.logo {
+    height: 500px;
+    &__maincont {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 94px 165px;
+        gap: 125px;
+        &__textcont {
+            display: flex;
+            flex-direction: column;
+            width: 445px;
+            &-main {
+                font-weight: bold;
+                margin-bottom: 21px;
+                font-size: 36px;
+                line-height: 42px;
+            }
+            &-second {
+                text-align: justify;
+                font-size: 14px;
+                line-height: 140%;
+            }
+            &-link {
+                cursor: pointer; //делает ее как ссылку
+                color: #ED4C5C;
+                width: 107px;
+                font-size: 14px;
+                line-height: 140%;
+                border-bottom: 1px solid transparent; //создает его заранее, чтобы не было скачка текста
+                &:hover {
+                    border-bottom: 1px solid #ED4C5C; //нижнее подчеркивание ссылки
+                }
+            }
+        }
+    }
+}
+
+.owerview {
+    height: 500px;
+    background-color: #ED4C5C;
+    &__app__download {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 94px 165px;
+        gap: 125px;
+        &__text {
+            color: #FFFFFF;
+            display: flex;
+            flex-direction: column;
+            width: 445px;
+            &-main {
+                font-weight: bold;
+                margin-bottom: 21px;
+                font-size: 36px;
+                line-height: 42px;
+            }
+            &-second {
+                text-align: justify;
+                font-size: 14px;
+                line-height: 140%;
+            }
+            &-link__icons {
+                width: 32px;
+                height: 32px;
+                margin-top: 21px;
+                cursor: pointer; //делает ее как ссылку
+            }
+        }
+        .conteiner {
+            display: flex;
+            gap: 10px;
+        }
+    }
+}
